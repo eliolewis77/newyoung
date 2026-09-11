@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="9n4j8IDu1wlPTgXWRP9L3K">
+<head data-page-node-id="WsLMdBoE9xDk5WG0r47NXd">
+<meta charset="UTF-8" data-page-node-id="bRK9Bl4fXDvuMvB315bVFZ">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="m4qOmslkk7MdldPXXVrcPg">
+<title>工具箱 · 青年劳动权益手册</title>
+<meta name="description" content="N/2N 速算、加班费、工资条解读器、退休时间与退休金、退租押金结算、证据自查清单，劳动权益实用工具箱。">
+<meta name="keywords" content="劳动权益工具,N计算,加班费计算,工资条解读,养老金计算,押金结算">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="青年劳动权益手册">
+<meta property="og:title" content="工具箱 · 青年劳动权益手册">
+<meta property="og:description" content="N/2N 速算、加班费、退休时间与退休金、退租押金结算、证据自查清单，劳动权益实用工具箱。">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"工具箱 · 青年劳动权益手册","description":"N/2N 速算、加班费、退休时间与退休金、退租押金结算、证据自查清单，劳动权益实用工具箱。","inLanguage":"zh-CN","url":"https://labor-rights-i2ha8oxc.edgeone.cool/tools.html","publisher":{"@type":"Organization","name":"青年劳动权益手册"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" data-page-node-id="rpLOLG7jOWIEZ5uywgIlmv">
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet" data-page-node-id="uEuDJP00CY27Tvzv59VcQB">
+<link rel="stylesheet" href="styles.css" data-page-node-id="3dQ4Nd8YJNHagevp7E0OFx">
+</head>
+<body data-page-node-id="F3iw20dLzs65oHjeEO9A5x">
+
+<nav id="topnav"></nav>
+<script src="nav.js"></script>
+
+<section data-page-node-id="QWO2neQbqmfe8yeAVSlHNi">
+  <div class="wrap" data-page-node-id="IxpZ0T8Q3oadYV9NDUoD5i">
+    <div class="sec-head" data-page-node-id="Bd4OrGp3hXHG7AHEvinI8M"><span class="sec-kicker">工具箱</span></div>
+    <h2 class="sec-title" data-page-node-id="wHhSYNNzGQoDQIxAUrnBG4">把法条变成你能直接用的数字</h2>
+    <p class="sec-sub" data-page-node-id="mFbmQPQcPlDMsMiXy3nl5K">结果仅供参考，具体以当地最新规定和官方口径为准。</p>
+
+    <div class="tool-grid" data-page-node-id="pGmZCPfkN7IAlwBKjRaxgu">
+      <!-- 离职补偿金 -->
+      <div class="tool" data-page-node-id="zeZ64BwWMioueNTFF5xjMV">
+        <h3 data-page-node-id="CrptjLViXSYfJMN3zFaDMz">离职补偿金速算（N / 2N）</h3>
+        <div class="row" data-page-node-id="lOzURTgYFkhHnYC5ffR8cW">
+          <div class="field" data-page-node-id="o9zYNl3rDk3UKYdxbqeKdx">
+            <label data-page-node-id="ljnbmZkhEB4AUsw7uw4cFL">工作年限（年，可小数）</label>
+            <input id="years" type="number" step="0.1" placeholder="如 2.5" data-page-node-id="8W5Ti58hC3tvynubllCmc2">
+          </div>
+          <div class="field" data-page-node-id="b2bIwkKKQBwC3GSNj04EuA">
+            <label data-page-node-id="RmoIEeRhlEkbaXymJ73Tvs">前12个月平均月工资（元）</label>
+            <input id="salary" type="number" placeholder="如 8000" data-page-node-id="lljGkBciblH9qZeelF5r05">
+          </div>
+        </div>
+        <div class="field" data-page-node-id="znnHMCFz4ubYHNIBEti7tn">
+          <label data-page-node-id="qalp8BNzD1lPvt0DCZl9B5">当地上年度职工月均工资 3 倍（选填，超了才封顶）</label>
+          <input id="cap" type="number" placeholder="如 35000，留空表示不封顶" data-page-node-id="qovDrMY9y1JT79iyGtpath">
+        </div>
+        <div class="field" data-page-node-id="6FrOUBFDprwWLLPdwteA6N">
+          <label data-page-node-id="DmxQgb15mqjroumexGRLe7">解除性质</label>
+          <select id="illegal" data-page-node-id="Rl20Rftjo0yQH1aiytov2V">
+            <option value="0" data-page-node-id="QwavOc0BcDD3AwybQXjq1w">合法解除（N 或 N+代通知金）</option>
+            <option value="1" data-page-node-id="nLgHSFVpUPpPMZfQhyMwTD">违法解除（2N 赔偿）</option>
+          </select>
+        </div>
+        <button class="btn" onclick="calcN()" data-page-node-id="LePsv5NBHtvIJZtlCZXGgV">算一下</button>
+        <div class="result" id="nResult" data-page-node-id="Qmhbaa14VTRscdWdVrE1E9">填好上面两项，点"算一下"。</div>
+        <div class="hint" data-page-node-id="niBDjoNCKr2OW75va7VrnX">N 规则：满1年=1个月；超6个月不满1年按1年；不满6个月=半月。超社平3倍则按3倍封顶、年限最高12年。</div>
+      </div>
+
+      <!-- 加班费 -->
+      <div class="tool" data-page-node-id="oFkcXLXMCRIJxMX0deJX4i">
+        <h3 data-page-node-id="uXdk3koHD5Rp7ECpuN9VHE">加班费计算器</h3>
+        <div class="field" data-page-node-id="9pVRnZ6GiWiu8gVxnVmIX5">
+          <label data-page-node-id="TEpPJwhXavdcofCyfos5hr">月薪（元），自动按 21.75 天折算时薪</label>
+          <input id="msalary" type="number" placeholder="如 8000" data-page-node-id="8BLSIgOH1bR60fgNke1zOj">
+        </div>
+        <div class="row" data-page-node-id="RXeSiJB8murwgXKfwZ3MbT">
+          <div class="field" data-page-node-id="fsjEbVX62IqGwALxjv7kB4">
+            <label data-page-node-id="rHWnhG71wI2oUsRlbMZnxm">平日加班（小时）</label>
+            <input id="otNormal" type="number" placeholder="0" data-page-node-id="pUfkEzVaVmve54s59RBrwV">
+          </div>
+          <div class="field" data-page-node-id="uedHJlNBRwztqOUdK7KV5K">
+            <label data-page-node-id="GaLwyYULqwJ9leEz0YHRvY">休息日加班（小时）</label>
+            <input id="otRest" type="number" placeholder="0" data-page-node-id="CZMBSnQELinw7ZojnkEH6m">
+          </div>
+          <div class="field" data-page-node-id="DzQZRpEKopAlPNhwCUd2Oc">
+            <label data-page-node-id="rN2mjFro2gOxWb8HHAosUO">法定假日（小时）</label>
+            <input id="otHoliday" type="number" placeholder="0" data-page-node-id="BLwVeBXT03kxLI7ivfeCrL">
+          </div>
+        </div>
+        <button class="btn" onclick="calcOT()" data-page-node-id="JqpicbHSgGDBfnb33AcRjF">算加班费</button>
+        <div class="result" id="otResult" data-page-node-id="948DmUnn1r8HKyQJfoUfUS">填月薪和加班小时数，点"算加班费"。</div>
+        <div class="hint" data-page-node-id="a4prHbe7tymMx6EbJfp0xB">时薪 = 月薪 ÷ 21.75 ÷ 8；倍数：平日1.5 / 休息日2 / 法定3.</div>
+      </div>
+
+      <!-- 退休时间计算器 -->
+      <div class="tool" data-page-node-id="L5XVDnoyoYwWT1dI994aDS">
+        <h3 data-page-node-id="j5ON7RPDArUc5VuYJ1bbAU">退休时间计算器</h3>
+        <div class="row" data-page-node-id="ndDYV1HDeQMyGXrJhqHBsz">
+          <div class="field" style="flex:1" data-page-node-id="RA42VI9lOXotAEyhitXxjY">
+            <label data-page-node-id="5p856yRBA423I6LFMKuDvh">出生年份</label>
+            <input id="birthYear" type="number" placeholder="如 1998" data-page-node-id="haX22Q4HyzYV6kvC99nadu">
+          </div>
+          <div class="field" style="width:108px;flex:none" data-page-node-id="aM5DuGxdj9D0PzDPjcaIAn">
+            <label data-page-node-id="R1a6hVlXBpXASFHkEDHyHz">月份</label>
+            <input id="birthMonth" type="number" min="1" max="12" placeholder="1-12" data-page-node-id="yX51dkctF9cBgvZ7y7J8ts">
+          </div>
+        </div>
+        <div class="field" data-page-node-id="UPcJnCyCBV4TcDa8JkNlCJ">
+          <label data-page-node-id="rpTGwHwt9FHlwE6Rg0XfWZ">身份</label>
+          <select id="genderType" data-page-node-id="GezEF5XWaeiEBfADYGfkSb">
+            <option value="m" data-page-node-id="5W7xAbIOzlkfPnQlI9Azjk">男职工（原 60 → 逐步 63）</option>
+            <option value="f55" data-page-node-id="YD8EHApckWMxJE0DiHy3SD">女职工·管理技术岗（原 55 → 逐步 58）</option>
+            <option value="f50" data-page-node-id="27zv1O9ce2NyAiqTt0vL9G">女职工·工人岗（原 50 → 逐步 55）</option>
+          </select>
+        </div>
+        <button class="btn" onclick="calcRetire()" data-page-node-id="2wzSbS3pdbM1ATdXeudulK">算退休时间</button>
+        <div class="result" id="retireResult" data-page-node-id="bWaGqZlrFWV9gIjVLH2QoP">填出生年月和身份，点"算退休时间"。</div>
+        <div class="hint" data-page-node-id="XrxIcUeeSEGCgS6OihRvCK">基于 2024 年渐进式延迟退休办法（2025-01-01 施行）通用算法估算；弹性退休可自愿前后不超 3 年，精确到月以官方对照表 / 12333 为准。</div>
+      </div>
+
+      <!-- 退休金估算器 -->
+      <div class="tool" data-page-node-id="3Uir0g9J50k1EhBucYlu31">
+        <h3 data-page-node-id="EtosB2FokovJoO2A1Twqhl">退休金估算器</h3>
+        <div class="row" data-page-node-id="GdJ5yvHjMnRAX8azg4weqi">
+          <div class="field" data-page-node-id="47QEFjwmHrx082KRnnznhw">
+            <label data-page-node-id="g6dXveOLhXWDGRMwrqYSa4">当地社平工资（元/月）</label>
+            <input id="pAvg" type="number" placeholder="如 8000" data-page-node-id="h6G08oqms6Xpv5RKqNQkDK">
+          </div>
+          <div class="field" data-page-node-id="kKpkzTXFVUnIGApYR5pigJ">
+            <label data-page-node-id="Wv1rsscgTr8GlANYMkfBmq">缴费年限（年）</label>
+            <input id="pYears" type="number" placeholder="如 30" data-page-node-id="zfM4k5Dewnhrxx8FtzXsze">
+          </div>
+        </div>
+        <div class="row" data-page-node-id="fUlhrKVYTi3MMBaA7EAVtp">
+          <div class="field" data-page-node-id="IhKwIqIT4MrDA5h2ifQ11d">
+            <label data-page-node-id="jGlngvmL4HP3BF1Y2G83pK">平均缴费指数（0.6~3）</label>
+            <input id="pIndex" type="number" step="0.1" placeholder="如 1" data-page-node-id="myKDC7CAXIDznJuUX7Hqya">
+          </div>
+          <div class="field" data-page-node-id="gGsdMYg8dtdTEhPsCeXTgv">
+            <label data-page-node-id="kD9UO7EaHLqBmu405BJzah">个人账户储存额（元）</label>
+            <input id="pAcct" type="number" placeholder="如 80000" data-page-node-id="3kdUti63xO7ZOFVyDbFGWl">
+          </div>
+        </div>
+        <div class="field" data-page-node-id="DfOR7sUz3TFiBOlyJ8o2El">
+          <label data-page-node-id="vGADQ8zjuJ6IfBBqoO48GO">退休年龄（岁，用于计发月数）</label>
+          <input id="pAge" type="number" placeholder="如 60" data-page-node-id="X72zMFtWY0YhG5oSMeqWB3">
+        </div>
+        <button class="btn" onclick="calcPension()" data-page-node-id="BJlO3neGQpmAo6yK1s16w0">估算月养老金</button>
+        <div class="result" id="penResult" data-page-node-id="kvE2gQiuCGHP2huGQo5nYh">填完所有项，点"估算月养老金"。</div>
+        <div class="hint" data-page-node-id="NGV4kNPDMykm6UA63iP0M4">基础=(社平×(1+指数)/2×年限×1%)；个人=账户额÷计发月数。估算值，以社保局核算为准。</div>
+      </div>
+
+      <!-- 退租押金结算 -->
+      <div class="tool">
+        <h3>退租押金结算器</h3>
+        <div class="row">
+          <div class="field">
+            <label>押金金额（元）</label>
+            <input id="depAmount" type="number" placeholder="如 3000">
+          </div>
+          <div class="field">
+            <label>欠租（元，没有就填 0）</label>
+            <input id="depRent" type="number" placeholder="0">
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label>水电燃气等欠费（元）</label>
+            <input id="depUtil" type="number" placeholder="0">
+          </div>
+          <div class="field">
+            <label>房东主张的损坏赔偿（元）</label>
+            <input id="depDmg" type="number" placeholder="0">
+          </div>
+        </div>
+        <div class="field">
+          <label>提前退租违约金（元，没有就填 0）</label>
+          <input id="depPen" type="number" placeholder="0">
+        </div>
+        <button class="btn" onclick="calcDeposit()">算能退多少</button>
+        <div class="result" id="depResult">填押金金额，其他项没有就填 0，点"算能退多少"。</div>
+        <div class="hint">押金应当返还，扣钱要有依据和凭证。正常使用的损耗不用赔（民法典第710条）；违约金过分高于实际损失的可请求减少（第585条）。</div>
+      </div>
+
+      <!-- 工资条解读器 -->
+      <div class="tool" id="payslip">
+        <h3>工资条解读器</h3>
+        <p class="sec-sub" style="margin:0 0 16px">把工资条上"社保 / 公积金代扣"几栏的数字填进来，自动标出比例对不对、基数有没有低于下限。</p>
+        <div class="field">
+          <label>社保缴费基数（元，看工资条"缴费基数"栏；没有就填月应发工资估算）</label>
+          <input id="psBase" type="number" placeholder="如 8000">
+        </div>
+        <div class="row">
+          <div class="field">
+            <label>养老代扣（元）</label>
+            <input id="psYang" type="number" placeholder="如 640">
+          </div>
+          <div class="field">
+            <label>医疗代扣（元）</label>
+            <input id="psYi" type="number" placeholder="如 160">
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label>失业代扣（元）</label>
+            <input id="psShi" type="number" placeholder="如 40">
+          </div>
+          <div class="field">
+            <label>公积金代扣（元）</label>
+            <input id="psGjj" type="number" placeholder="如 960">
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label>当地最低基数（选填，用于判断是否低于下限）</label>
+            <input id="psMin" type="number" placeholder="如 4000">
+          </div>
+          <div class="field">
+            <label>当地最高基数（选填，用于判断是否封顶）</label>
+            <input id="psMax" type="number" placeholder="如 20000">
+          </div>
+        </div>
+        <button class="btn" onclick="calcPayslip()">解读工资条</button>
+        <div class="result" id="psResult">填好基数和代扣金额，点"解读工资条"。</div>
+        <div class="hint">个人比例参考：养老 8% / 医疗 2% / 失业 0.5% / 公积金 5%–12%（前三项合计约 10.5%，公积金另算）。单位应按时足额缴纳（<span class="law">社保法 第60条</span>），公积金也应足额缴存（<span class="law">公积金条例 第20条</span>）。</div>
+      </div>
+    </div>
+
+    <!-- 证据自查清单 -->
+    <div class="tool" style="margin-top:22px" data-page-node-id="nAWW7CFzHWBMMbrbOgitu0">
+      <h3 data-page-node-id="2yCsdGOTmJtHeKymbKxMEZ">入职 / 在职证据自查清单</h3>
+      <ul class="checklist" id="checklist" data-page-node-id="Hqm2GZjHthghzdKeaCeBdb">
+        <li data-page-node-id="IEQvgoyGE8GdS3nh73jb30"><input type="checkbox" onchange="updProgress()" data-page-node-id="d3ZmjJolMzy0kurqjmFFAx"> 我手里有一份签字盖章的劳动合同原件</li>
+        <li data-page-node-id="Qm1u6fGVvvS2GNNR9PvvBL"><input type="checkbox" onchange="updProgress()" data-page-node-id="gXqfAAYQDDGUw7FPSfp40E"> 我知道自己的试用期时长和工资标准（书面）</li>
+        <li data-page-node-id="UOVAA9SCMHABCElj8K8K1X"><input type="checkbox" onchange="updProgress()" data-page-node-id="V7FL0Yo1aboVuBd4VfDjhB"> 工资按月发放，有工资条 / 银行流水</li>
+        <li data-page-node-id="GvieUwzDnCx7cda2gKThIC"><input type="checkbox" onchange="updProgress()" data-page-node-id="8q3hkJxD0abvAzzUTkFfDZ"> 单位给我缴了社保和公积金（可查）</li>
+        <li data-page-node-id="qnAiYehEBM3vQ7Xc4WmObk"><input type="checkbox" onchange="updProgress()" data-page-node-id="8ACdQ41KcDWmvKeCKpv8tC"> 加班有记录，没给加班费我留了证</li>
+        <li data-page-node-id="GSmMkoRSczNseTMngN37Ca"><input type="checkbox" onchange="updProgress()" data-page-node-id="DeNDwUaBjiKUPMa68eyrDG"> 重要沟通尽量落在微信 / 邮件文字</li>
+        <li data-page-node-id="1WkjJrmQl1y7h9uUtmwdPb"><input type="checkbox" onchange="updProgress()" data-page-node-id="h3BYxq25o7HQVXFJP4CsZg"> 如果签了竞业协议，单位按月给补偿</li>
+        <li data-page-node-id="7LyICk5oUW6iajHbQyFw9Y"><input type="checkbox" onchange="updProgress()" data-page-node-id="Fr9FWrZtGMw6NC0MmgEZ5C"> 解除劳动关系会有书面通知，不全信口头</li>
+      </ul>
+      <div class="progress" data-page-node-id="4WefC0AKrzubi8GAxYjkzU"><i id="pgBar" data-page-node-id="SwCUp2ixQ0EOAH7K8JWKeo"></i></div>
+      <div class="pg-text" id="pgText" data-page-node-id="gVVUPNU3a3mnu7uzZzMHwy">已确认 0 / 8</div>
+    </div>
+
+    <div class="cta" style="margin-top:26px" data-page-node-id="IWvifrvSwqRByS12lo4zXg">
+      <a class="ghost" href="index.html" data-page-node-id="v5dLLSL1P427IXDdPsXIve">返回首页</a>
+    </div>
+  </div>
+</section>
+
+<div class="disclaimer" data-page-node-id="91AqBAudWiEuApLDZOoIoK">
+  <div class="wrap" data-page-node-id="UrpN49LMJD0HL5AjP669Ox">
+    <b data-page-node-id="dXlXrAinbXnd51YD606Hvo">免责声明</b><br data-page-node-id="IzEz8bmRVJth0FVR26SCu2">
+    本网站内容基于《中华人民共和国劳动合同法》《劳动法》《社会保险法》《劳动争议调解仲裁法》等公开法律条文整理，仅作普法参考，不构成法律意见。个案情况复杂，具体金额、时效、认定请以当地最新规定和官方口径为准；遇纠纷建议咨询劳动监察部门（热线 12333）、法律援助机构或执业律师。文中数额示例（如 21.75 计薪天数、社平工资）会随年度与地区调整，请以官方数据为准。
+  </div>
+</div>
+
+<footer data-page-node-id="K6peuS0t1BOJdVnQq28geP">真正的青年大学习 · 青年劳动权益手册　|　依法维权，从留证据开始</footer>
+
+<script src="law.js"></script>
+<script src="tools.js"></script>
+</body>
+</html>
