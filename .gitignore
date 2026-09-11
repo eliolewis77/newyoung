@@ -1,1 +1,5 @@
 .DS_Store
+
+# EdgeOne 部署产物（本站改用 Cloudflare Pages）
+.edgeone/
+.env
