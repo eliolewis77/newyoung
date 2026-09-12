@@ -164,6 +164,17 @@ section{padding:54px 0}
 .disclaimer b{color:#fff}
 footer{background:var(--green-d);color:#dfe9e3;padding:26px 0;font-size:13.5px;text-align:center}
 .brand-en{color:#FF8A3D;font-weight:700;letter-spacing:.05em;text-transform:lowercase}
+
+/* 个税页 */
+.deduct{width:100%;border-collapse:collapse;margin:18px 0;font-size:14px;background:#fff;border:2px solid #111;border-radius:10px;overflow:hidden}
+.deduct th,.deduct td{border:1px solid #d9cdb8;padding:10px 12px;vertical-align:top;text-align:left;line-height:1.6}
+.deduct th{background:#FDF6EC;color:#2E5E4E;font-weight:700}
+.deduct tr:nth-child(even) td{background:#FBF3E6}
+.formula{background:#2E5E4E;color:#FDF6EC;border-radius:12px;padding:16px 18px;font-size:14px;line-height:1.95;margin:16px 0;box-shadow:4px 4px 0 #111}
+.formula b{color:#FFD9B0}
+.sub-title{font-size:19px;font-weight:700;color:#2E5E4E;margin:30px 0 10px;border-left:5px solid #FF8A3D;padding-left:12px}
+.note{background:#FFF6E9;border:2px dashed #FF8A3D;border-radius:10px;padding:12px 14px;font-size:13.5px;line-height:1.8;margin:14px 0}
+.note b{color:#C25A12}
 .back{display:inline-block;margin-top:18px;font-weight:700;color:var(--orange-d);font-size:15px}
 
 /* 法条弹窗 */

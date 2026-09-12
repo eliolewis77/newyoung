@@ -6,6 +6,7 @@
       { f: 'contract.html', t: '合同试用期' },
       { f: 'wage.html', t: '工资社保' },
       { f: 'social-security.html', t: '社保公积金' },
+      { f: 'tax.html', t: '个税汇算' },
       { f: 'leave.html', t: '离职竞业' },
       { f: 'retire.html', t: '退休养老' },
       { f: 'rights.html', t: '维权证据' },
