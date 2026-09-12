@@ -163,6 +163,7 @@ section{padding:54px 0}
 .disclaimer .wrap{max-width:780px}
 .disclaimer b{color:#fff}
 footer{background:var(--green-d);color:#dfe9e3;padding:26px 0;font-size:13.5px;text-align:center}
+.brand-en{color:#FF8A3D;font-weight:700;letter-spacing:.05em;text-transform:lowercase}
 .back{display:inline-block;margin-top:18px;font-weight:700;color:var(--orange-d);font-size:15px}
 
 /* 法条弹窗 */
