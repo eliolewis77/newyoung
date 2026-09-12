@@ -58,7 +58,7 @@
         '<div class="nav-row1">' +
           '<div class="brand"><span class="dot">' +
             '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg>' +
-          '</span>青年劳动权益手册</div>' +
+          '</span>新青年手册</div>' +
           '<div class="navtabs">' +
             '<a href="index.html" class="' + tabCls('home') + '">首页</a>' +
             '<button class="' + tabCls('work') + '" data-zone="work">工作</button>' +
