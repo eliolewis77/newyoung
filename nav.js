@@ -10,6 +10,7 @@
       { f: 'leave.html', t: '离职竞业' },
       { f: 'retire.html', t: '退休养老' },
       { f: 'rights.html', t: '维权证据' },
+      { f: 'internship.html', t: '实习权益' },
       { f: 'tools.html', t: '工具箱' }
     ],
     life: [
