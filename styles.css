@@ -188,9 +188,9 @@ footer{background:var(--green-d);color:#dfe9e3;padding:26px 0;font-size:13.5px;t
 .navcol{flex:2 1 260px;min-width:200px}
 .navcol.narrow{flex:0 1 auto;min-width:140px}
 .navgrp{display:block;font-size:12px;letter-spacing:.1em;color:#FFD9B0;margin-bottom:7px}
-.navcol a{display:block;color:#FDF6EC;text-decoration:none;padding:5px 0;font-size:14px;line-height:1.5}
+.navcol a{display:block;color:#FDF6EC;text-decoration:none;padding:5px 8px;font-size:14px;line-height:1.5;border-radius:6px}
 .navcol a.cur{color:#FF8A3D;font-weight:700}
-.navcol a:hover{color:#fff}
+.navcol a:hover{background:#FF8A3D;color:#2E5E4E}
 .back{display:inline-block;margin-top:18px;font-weight:700;color:var(--orange-d);font-size:15px}
 
 /* 法条弹窗 */
