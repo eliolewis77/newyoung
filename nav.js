@@ -1,4 +1,4 @@
-/* 顶部 tab 导航：首页 / 工作 / 生活 三选一高亮；按当前文件名判断默认分组 */
+/* 顶部导航：工作 / 生活 并列两栏显示（不再用切换 tab） */
 (function () {
   var GROUPS = {
     work: [
@@ -20,63 +20,25 @@
   var file = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
   if (!file) file = 'index.html';
 
-  // 当前页落在哪个 tab：首页 / 工作 / 生活
-  function tabOf(f) {
-    if (GROUPS.work.some(function (p) { return p.f === f; })) return 'work';
-    if (GROUPS.life.some(function (p) { return p.f === f; })) return 'life';
-    return 'home';
-  }
-
-  var curTab = tabOf(file); // 唯一高亮项
-
   var nav = document.getElementById('topnav');
   if (!nav) return;
 
-  function linksHtml(list) {
-    return list.map(function (p) {
+  function colHtml(list, label, narrow) {
+    var links = list.map(function (p) {
       var cur = (p.f === file) ? ' cur' : '';
       return '<a href="' + p.f + '" class="' + cur.trim() + '">' + p.t + '</a>';
     }).join('');
+    return '<div class="navcol' + (narrow ? ' narrow' : '') + '"><span class="navgrp">' + label + '</span>' + links + '</div>';
   }
 
-  function panelHtml() {
-    if (curTab === 'life') {
-      return linksHtml(GROUPS.life) + '<span class="navnote">生活篇暂时只有这一个模块</span>';
-    }
-    if (curTab === 'home') {
-      // 首页：展示全部分类，作为站点总览，区别于「工作」tab 的纯工作链接
-      return '<span class="navgrp">工作</span>' + linksHtml(GROUPS.work) +
-             '<span class="navgrp">生活</span>' + linksHtml(GROUPS.life);
-    }
-    return linksHtml(GROUPS.work); // 工作 tab：仅工作类
-  }
-
-  function render() {
-    function tabCls(z) { return 'tab' + (curTab === z ? ' active' : ''); }
-
-    nav.innerHTML =
-      '<div class="wrap">' +
-        '<div class="nav-row1">' +
-          '<div class="brand"><span class="dot">' +
-            '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg>' +
-          '</span>新青年手册</div>' +
-          '<div class="navtabs">' +
-            '<a href="index.html" class="' + tabCls('home') + '">首页</a>' +
-            '<button class="' + tabCls('work') + '" data-zone="work">工作</button>' +
-            '<button class="' + tabCls('life') + '" data-zone="life">生活</button>' +
-          '</div>' +
-        '</div>' +
-        '<div class="navpanel">' + panelHtml() + '</div>' +
-      '</div>';
-
-    var tabs = nav.querySelectorAll('.tab[data-zone]');
-    for (var i = 0; i < tabs.length; i++) {
-      tabs[i].addEventListener('click', function () {
-        curTab = this.getAttribute('data-zone');
-        render();
-      });
-    }
-  }
-
-  render();
+  nav.innerHTML =
+    '<div class="wrap">' +
+      '<div class="nav-row1">' +
+        '<div class="brand"><span class="dot">' +
+          '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg>' +
+        '</span>新青年手册</div>' +
+        '<div class="navtabs"><a href="index.html" class="' + (file === 'index.html' ? 'active' : '') + '">首页</a></div>' +
+      '</div>' +
+      '<div class="navpanel">' + colHtml(GROUPS.work, '工作', false) + colHtml(GROUPS.life, '生活', true) + '</div>' +
+    '</div>';
 })();

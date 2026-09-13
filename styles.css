@@ -175,6 +175,22 @@ footer{background:var(--green-d);color:#dfe9e3;padding:26px 0;font-size:13.5px;t
 .sub-title{font-size:19px;font-weight:700;color:#2E5E4E;margin:30px 0 10px;border-left:5px solid #FF8A3D;padding-left:12px}
 .note{background:#FFF6E9;border:2px dashed #FF8A3D;border-radius:10px;padding:12px 14px;font-size:13.5px;line-height:1.8;margin:14px 0}
 .note b{color:#C25A12}
+
+/* 顶部导航：深绿栏 + 工作/生活 并列两栏 */
+#topnav{background:var(--green-d,#2E5E4E);color:#FDF6EC}
+#topnav .wrap{max-width:1000px;margin:0 auto;padding:10px 18px}
+.nav-row1{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:8px;font-weight:700;font-size:17px;color:#FDF6EC}
+.brand .dot{display:inline-flex;background:#FF8A3D;border-radius:50%;padding:5px;line-height:0}
+.navtabs a{color:#FDF6EC;text-decoration:none;font-weight:700;padding:6px 14px;border-radius:8px;font-size:14px}
+.navtabs a.active,.navtabs a:hover{background:rgba(255,255,255,.16)}
+.navpanel{display:flex;gap:30px;flex-wrap:wrap;margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,.18)}
+.navcol{flex:2 1 260px;min-width:200px}
+.navcol.narrow{flex:0 1 auto;min-width:140px}
+.navgrp{display:block;font-size:12px;letter-spacing:.1em;color:#FFD9B0;margin-bottom:7px}
+.navcol a{display:block;color:#FDF6EC;text-decoration:none;padding:5px 0;font-size:14px;line-height:1.5}
+.navcol a.cur{color:#FF8A3D;font-weight:700}
+.navcol a:hover{color:#fff}
 .back{display:inline-block;margin-top:18px;font-weight:700;color:var(--orange-d);font-size:15px}
 
 /* 法条弹窗 */
