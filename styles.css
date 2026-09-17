@@ -184,7 +184,7 @@ footer{background:var(--green-d);color:#dfe9e3;padding:26px 0;font-size:13.5px;t
 .brand .dot{display:inline-flex;background:#FF8A3D;border-radius:50%;padding:5px;line-height:0}
 .navtabs a{color:#FDF6EC;text-decoration:none;font-weight:700;padding:6px 14px;border-radius:8px;font-size:14px}
 .navtabs a.active,.navtabs a:hover{background:rgba(255,255,255,.16)}
-.navpanel{display:flex;flex-direction:column;gap:8px;margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,.18)}
+.navpanel{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,.18)}
 .navgroup{display:flex;align-items:baseline;gap:12px}
 .navlinks{display:flex;flex-wrap:wrap;gap:6px;flex:1 1 auto;min-width:0}
 .navgrp{display:inline-block;min-width:2.6em;font-size:12px;letter-spacing:.1em;color:#FFD9B0;flex:0 0 auto}
