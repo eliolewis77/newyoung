@@ -189,7 +189,7 @@ footer{background:var(--green-d);color:#dfe9e3;padding:26px 0;font-size:13.5px;t
 .navlinks{display:flex;flex-wrap:wrap;gap:6px;flex:1 1 auto;min-width:0}
 .navgrp{display:inline-block;min-width:2.6em;font-size:12px;letter-spacing:.1em;color:#FFD9B0;flex:0 0 auto}
 .navlinks a{display:inline-block;color:#FDF6EC;text-decoration:none;padding:5px 8px;font-size:14px;line-height:1.5;border-radius:6px}
-.navlinks a.cur{color:#FF8A3D;font-weight:700}
+.navlinks a.cur{background:#FF8A3D;color:#2E5E4E;font-weight:700}
 .navlinks a:hover{background:#FF8A3D;color:#2E5E4E}
 .back{display:inline-block;margin-top:18px;font-weight:700;color:var(--orange-d);font-size:15px}
 
