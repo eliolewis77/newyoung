@@ -17,7 +17,7 @@ a{color:var(--green-d);text-decoration:none}
 .wrap{max-width:980px;margin:0 auto;padding:0 22px}
 
 /* nav：两行 tab 结构（顶部 tab 按工作/生活分类） */
-nav{position:sticky;top:0;z-index:50;background:rgba(253,246,236,.96);backdrop-filter:blur(6px);
+nav{background:rgba(253,246,236,.96);backdrop-filter:blur(6px);
   border-bottom:2px dashed var(--line)}
 nav .wrap{display:flex;flex-direction:column;gap:9px;padding-top:10px;padding-bottom:10px}
 .nav-row1{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
