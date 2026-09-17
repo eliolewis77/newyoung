@@ -24,12 +24,12 @@
   var nav = document.getElementById('topnav');
   if (!nav) return;
 
-  function colHtml(list, label, narrow) {
+  function colHtml(list, label) {
     var links = list.map(function (p) {
       var cur = (p.f === file) ? ' cur' : '';
       return '<a href="' + p.f + '" class="' + cur.trim() + '">' + p.t + '</a>';
     }).join('');
-    return '<div class="navcol' + (narrow ? ' narrow' : '') + '"><span class="navgrp">' + label + '</span>' + links + '</div>';
+    return '<div class="navgroup"><span class="navgrp">' + label + '</span><div class="navlinks">' + links + '</div></div>';
   }
 
   nav.innerHTML =
@@ -40,6 +40,6 @@
         '</span>新青年手册</div>' +
         '<div class="navtabs"><a href="index.html" class="' + (file === 'index.html' ? 'active' : '') + '">首页</a></div>' +
       '</div>' +
-      '<div class="navpanel">' + colHtml(GROUPS.work, '工作', false) + colHtml(GROUPS.life, '生活', true) + '</div>' +
+      '<div class="navpanel">' + colHtml(GROUPS.work, '工作') + colHtml(GROUPS.life, '生活') + '</div>' +
     '</div>';
 })();

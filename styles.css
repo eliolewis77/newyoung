@@ -176,7 +176,7 @@ footer{background:var(--green-d);color:#dfe9e3;padding:26px 0;font-size:13.5px;t
 .note{background:#FFF6E9;border:2px dashed #FF8A3D;border-radius:10px;padding:12px 14px;font-size:13.5px;line-height:1.8;margin:14px 0}
 .note b{color:#C25A12}
 
-/* 顶部导航：深绿栏 + 工作/生活 并列两栏 */
+/* 顶部导航：深绿栏 + 工作/生活 各占一行（分组横排，上下堆叠） */
 #topnav{background:var(--green-d,#2E5E4E);color:#FDF6EC}
 #topnav .wrap{max-width:1000px;margin:0 auto;padding:10px 18px}
 .nav-row1{display:flex;align-items:center;justify-content:space-between}
@@ -184,13 +184,13 @@ footer{background:var(--green-d);color:#dfe9e3;padding:26px 0;font-size:13.5px;t
 .brand .dot{display:inline-flex;background:#FF8A3D;border-radius:50%;padding:5px;line-height:0}
 .navtabs a{color:#FDF6EC;text-decoration:none;font-weight:700;padding:6px 14px;border-radius:8px;font-size:14px}
 .navtabs a.active,.navtabs a:hover{background:rgba(255,255,255,.16)}
-.navpanel{display:flex;gap:30px;flex-wrap:wrap;margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,.18)}
-.navcol{flex:2 1 260px;min-width:200px}
-.navcol.narrow{flex:0 1 auto;min-width:140px}
+.navpanel{display:flex;flex-direction:column;gap:8px;margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,.18)}
+.navgroup{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.navlinks{display:flex;gap:6px;flex-wrap:wrap}
 .navgrp{display:block;font-size:12px;letter-spacing:.1em;color:#FFD9B0;margin-bottom:7px}
-.navcol a{display:block;color:#FDF6EC;text-decoration:none;padding:5px 8px;font-size:14px;line-height:1.5;border-radius:6px}
-.navcol a.cur{color:#FF8A3D;font-weight:700}
-.navcol a:hover{background:#FF8A3D;color:#2E5E4E}
+.navlinks a{display:inline-block;color:#FDF6EC;text-decoration:none;padding:5px 8px;font-size:14px;line-height:1.5;border-radius:6px}
+.navlinks a.cur{color:#FF8A3D;font-weight:700}
+.navlinks a:hover{background:#FF8A3D;color:#2E5E4E}
 .back{display:inline-block;margin-top:18px;font-weight:700;color:var(--orange-d);font-size:15px}
 
 /* 法条弹窗 */
