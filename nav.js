@@ -35,10 +35,9 @@
   nav.innerHTML =
     '<div class="wrap">' +
       '<div class="nav-row1">' +
-        '<div class="brand"><span class="dot">' +
+        '<a class="brand" href="index.html"><span class="dot">' +
           '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg>' +
-        '</span>新青年手册</div>' +
-        '<div class="navtabs"><a href="index.html" class="' + (file === 'index.html' ? 'active' : '') + '">首页</a></div>' +
+        '</span>新青年手册</a>' +
       '</div>' +
       '<div class="navpanel">' + colHtml(GROUPS.work, '工作') + colHtml(GROUPS.life, '生活') + '</div>' +
     '</div>';
