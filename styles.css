@@ -185,9 +185,9 @@ footer{background:var(--green-d);color:#dfe9e3;padding:26px 0;font-size:13.5px;t
 .navtabs a{color:#FDF6EC;text-decoration:none;font-weight:700;padding:6px 14px;border-radius:8px;font-size:14px}
 .navtabs a.active,.navtabs a:hover{background:rgba(255,255,255,.16)}
 .navpanel{display:flex;flex-direction:column;gap:8px;margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,.18)}
-.navgroup{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
-.navlinks{display:flex;gap:6px;flex-wrap:wrap}
-.navgrp{display:block;font-size:12px;letter-spacing:.1em;color:#FFD9B0;margin-bottom:7px}
+.navgroup{display:flex;align-items:baseline;gap:12px}
+.navlinks{display:flex;flex-wrap:wrap;gap:6px;flex:1 1 auto;min-width:0}
+.navgrp{display:inline-block;min-width:2.6em;font-size:12px;letter-spacing:.1em;color:#FFD9B0;flex:0 0 auto}
 .navlinks a{display:inline-block;color:#FDF6EC;text-decoration:none;padding:5px 8px;font-size:14px;line-height:1.5;border-radius:6px}
 .navlinks a.cur{color:#FF8A3D;font-weight:700}
 .navlinks a:hover{background:#FF8A3D;color:#2E5E4E}
